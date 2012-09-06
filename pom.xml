@@ -24,6 +24,41 @@
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
     </scm>
+    
+    <repositories>
+		<repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>libs-release</name>
+          <url>http://10.0.0.185:8081/artifactory/libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>libs-snapshot</name>
+          <url>http://10.0.0.185:8081/artifactory/libs-snapshot</url>
+        </repository>
+
+	</repositories>
+	<pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>plugins-release</name>
+          <url>http://10.0.0.185:8081/artifactory/plugins-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>plugins-snapshot</name>
+          <url>http://10.0.0.185:8081/artifactory/plugins-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      
     <build>
         <plugins>
             <plugin>
